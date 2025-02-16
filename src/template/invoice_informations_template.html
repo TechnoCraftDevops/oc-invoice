@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-7">
+        <img src="../assets/OC_invoice.png" class="logo" />
+    </div>
+    <div class="col-5">
+        <h1 class="document-type">FACTURE</h1>
+        <p class="text-right"><strong>Référence facture {{ invoiceReference }}</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-5" style="text-align: left; width: 100px;">
+        <br /><br />
+        {{ billed }}
+    </div>
+    <br /><br />
+    <div class="col-7" style="text-align: left; width: 100px;">
+        {{ invoicer }}
+    </div>
+    <div class="col-5">
+        IBAN {{ ibanSwift }}
+    </div>
+</div>
+<br /> <br />
+<h6> date : {{ invoiceDate }} </h6>

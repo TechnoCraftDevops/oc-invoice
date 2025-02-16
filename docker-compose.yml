@@ -1,0 +1,7 @@
+services:
+  oc-invoice:
+    container_name: oc-invoice
+    build: .
+    tty: true # to keep container up and running
+    volumes:
+      - ./:/app

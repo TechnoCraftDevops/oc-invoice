@@ -1,0 +1,8 @@
+/vendor
+/composer.lock
+
+/.env
+
+/invoice_*.pdf
+/sessions.php
+/sessions.json

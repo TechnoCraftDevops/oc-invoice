@@ -1,0 +1,31 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th class="th">ETUDIANT</th>
+            <th class="th">DATE</th>
+            <th class="th">PROJET</th>
+            <th class="th">TYPE</th>
+            <th class="th">STATUT</th>
+            <th class="th">DUREES</th>
+            <th class="th">PRIX DE BASE</th>
+            <th class="th">PRIX FACTURE</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ invoiceDatas }}
+    </tbody>
+</table>
+<table>
+    <tr class="table-total">
+        <td><strong>Total HT</strong></td>
+        <td class="text-right">{{ totalWitoutVat }} €</td>
+    </tr>
+    <tr class="table-total">
+        <td>TVA 20%</td>
+        <td class="text-right">{{ totalVat }} €</td>
+    </tr>
+    <tr class="table-total">
+        <td><strong>Total TTC</strong></td>
+        <td class="text-right">{{ totalWithVAT }} €</td>
+    </tr>
+</table>
